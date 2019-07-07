@@ -100,12 +100,21 @@ print('apple') #ends with a newline character
 
 print('mango',end=' ')
 print('apple',end=' ')
-print('banana',end=' ')
+print('banana',end=' \n')
 
+#ESCAPE SEQUENCE
 
+#print('what's your name?')
 
+'''
+Uncomment above line to know the problem
+to use (') inside a print statement  so as to not to confuse python
+A slash (\) is used and double slash (\\) '''
 
+print('what\'s your name?')
+print("what\\'s your name?")
 
+print("Im done with strings.\nlets practice some variables and data types \t cool")
 
 
 
