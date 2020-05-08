@@ -1,0 +1,115 @@
+#***Control flow**
+#Indent Plays major role in python
+In [3]:
+##IF Statement
+
+x = int(input("give Input: ")) #input is fuction to take console input
+if x < 0:
+    x=0
+    print('Negative Nmber')
+elif x > 0 :
+    print(x)
+give Input: -2
+Negative Nmber
+In [13]:
+##For loops
+
+odd = [1,3,5,7,9,11,13,15]
+for number in odd:
+    if number in [1,5,9]:
+        new_number=2*number
+        print(new_number)
+    else: print(number)
+2
+3
+10
+7
+18
+11
+13
+15
+In [19]:
+#Range Function
+#When iteration needs to happen on sequence of number
+
+
+for number in range(10):
+    if number in [1,5,9]:
+        new_number=2*number
+        print(new_number)
+    else: print(number)
+        
+0
+2
+2
+3
+4
+10
+6
+7
+8
+18
+In [27]:
+#we can set starting and ending number 
+#we can set the increment value too
+#for number in range(5): 
+    #print(number)
+
+#for number in range(5,10): #starting and ending
+    #print(number)
+
+for number in range (1,20,2): #2 is STEP, by which the value can increment
+    print(number)
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+In [28]:
+#Range and Len()
+
+Fruits = ["Apple","banana","Mango","Watermelon"]
+
+for fruit in range(len(Fruits)):
+    print(fruit,Fruits[fruit])
+0 Apple
+1 banana
+2 Mango
+3 Watermelon
+In [33]:
+#While Loop
+
+a =0
+while a < 20:
+    print(a)
+    a+=1
+    
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+In [ ]:
+#Break And COntinue 
+#break the loop and come out it
+#continue the loop
