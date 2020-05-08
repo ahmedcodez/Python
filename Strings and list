@@ -1,0 +1,118 @@
+#Numbers
+
+# int and float are basic data types
+#in addition there Decimal and Fraction and complex (eg.3+5j)
+Out[3]:
+5.666666666666667
+In [ ]:
+##########Strings#############
+In [8]:
+#Strings are types which can be declared using "" or ''
+'London'
+"LONDON"
+'I haven\'t been to london' # \t is used escape the character
+Out[8]:
+"I haven't been to london"
+In [13]:
+#Print is a fuction
+print("Its a pleasant weather \n But there is a lockdown") #\n for new line
+print(r"I dont want \n to be treated as new line,using Raw Strings") #r before sentence to avoid \ be intrepreted
+
+print(""" i want to type
+multiple lines her
+so I can Triple-quotes""")
+Its a pleasant weather 
+ But there is a lockdown
+I dont want \n to be treated as new line,using Raw Strings
+ i want to type
+multiple lines her
+so I can Triple-quotes
+In [32]:
+#Concat of Strings
+#Strings can be combined using + and repeated using *
+3 *'Sa'+ 'Re'
+'Sa' 'Re'
+
+prefix ='Sa'
+suffix ='Re'
+
+word = prefix + suffix
+print (word)
+
+print(prefix + 'Ga')
+SaRe
+SaGa
+In [35]:
+#Index in Strings
+#using Index individual Character can be obtained
+#Strings can be Index with first Character as Size 0
+
+word = 'Quarantine'
+word[5] # counts from left
+word[-4] #counts from Right
+Out[35]:
+'t'
+In [41]:
+#Slicing 
+#to get Substring of String 
+
+word[0:2]#O,1 included  2 is excluded
+word [-3:-1]
+word[:2]#start is included from 0 by default
+word[2:]#end is also if not give
+Out[41]:
+'arantine'
+In [47]:
+#Immutable : Cannot be changed
+#Strings are immutable
+#We cannot change or update a indexed position
+
+text="Tea"
+text[0]= 'P'
+
+#TypeError: 'str' object does not support item assignment
+
+#to do that a new string can be created by
+new_text='P' + text[1:]
+print(new_text)
+Pea
+In [48]:
+#Fuctions of Str
+
+len(word) #gives the lenghth of string
+Out[48]:
+10
+In [49]:
+#Compound Data types
+#when a  group of other types are combined then its a Compound Data type
+#List,tuple,Dict are some example
+In [ ]:
+#*****LIST*********#
+#List is Comma seperated values withing [] .
+#It can have differnet types but mostly there are same type
+In [51]:
+odd = [1, 3, 5, 7, 9, 11]
+type(odd)
+odd
+Out[51]:
+[1, 3, 5, 7, 9, 11]
+In [63]:
+#Index , Slice, Concat,len are similar to strings.
+odd [3]
+odd [0:2]
+odd[-1]
+odd + [13, 15, 17]
+len(odd)
+Out[63]:
+6
+In [62]:
+#Lists are mutable
+#content can be changed
+
+odd = [1, 3, 5, 7, 9, 10]
+odd[5] = 11
+odd
+Out[62]:
+[1, 3, 5, 7, 9, 11]
+In [ ]:
+ 
